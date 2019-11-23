@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hi there fellow Open Source Enthusiast. We are absolutely overjoyed that you have decided to be a part of AINC Family. This is your first issue here, take a deep breath and relax, we are here to do wonders together, do read the community guidelines before any contribution. To check out how to create your first PR, head over to https://medium.com/@ankushsharma_70830/opening-up-to-open-source-contributions-61be26efb462 and get yourself acquainted to OpenSource Software contributions!'' first issue'
+        pr-message: 'Hi there fellow Open Source Enthusiast. We are absolutely overjoyed that you have decided to be a part of AINC Family. Congratulations on your first pull request! Take a deep breath and relax, we are here to do wonders together, do read the community guidelines before any contribution.'' first pr'
